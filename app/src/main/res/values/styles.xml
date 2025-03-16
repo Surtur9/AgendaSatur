@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalendarDayTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/calendar_day_text</item>
+    </style>
+    <style name="RoundedDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+</resources>

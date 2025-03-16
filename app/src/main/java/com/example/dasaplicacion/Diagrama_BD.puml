@@ -1,0 +1,43 @@
+@startuml
+title Diagrama Base de Datos - DASaplicacion
+
+package "Database (Room)" {
+
+  class AppDatabase {
+    + taskDao(): TaskDao
+  }
+
+  interface TaskDao {
+    + insertTask(Task): long
+    + getUpcomingTasks(Date): List<Task>
+    + getTasksForDay(long): List<Task>
+    + getAllTasks(): List<Task>
+    + deleteTask(Task): void
+  }
+
+  class Converters {
+    + fromTimestamp(Long): Date
+    + dateToTimestamp(Date): Long
+  }
+}
+
+package "Entidad" {
+  class Task {
+    - id: int
+    - title: String
+    - description: String
+    - dateTime: Date
+    + getId(): int
+    + getTitle(): String
+    + getDescription(): String
+    + getDateTime(): Date
+  }
+}
+
+' Relaciones
+AppDatabase ..> TaskDao : proporciona acceso
+AppDatabase ..> Converters : utiliza
+TaskDao --> Task : gestiona (CRUD)
+Converters --> Task : convierte fechas para
+
+@enduml

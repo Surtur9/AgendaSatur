@@ -1,0 +1,30 @@
+<resources>
+    <string-array name="languages">
+        <item>Gaztelania</item>
+        <item>Euskara</item>
+        <item>Ingelesa</item>
+    </string-array>
+    <string-array name="calendar_months">
+        <item>Urtarrila</item>
+        <item>Otsaila</item>
+        <item>Martxoa</item>
+        <item>Apirila</item>
+        <item>Maiatza</item>
+        <item>Ekaina</item>
+        <item>Uztaila</item>
+        <item>Abuztua</item>
+        <item>Iraila</item>
+        <item>Urria</item>
+        <item>Azaroa</item>
+        <item>Abendua</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Al</item>
+        <item>Ar</item>
+        <item>Az</item>
+        <item>Og</item>
+        <item>Ol</item>
+        <item>Lr</item>
+        <item>Ig</item>
+    </string-array>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgendaSatur</string>
+    <string name="logo">App Logo</string>
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">Close Menu</string>
+    <string name="home_description">
+    AgendaSatur is a scheduling and task management application that works locally.\n\n
+    Its features include:\n
+    • Task listing with notifications.\n
+    • Interactive calendar that highlights days with events.\n
+    • Creation, modification, and deletion of tasks.\n
+    • Dark and light modes.\n
+    • Multi-language support.\n\n
+    Developed by Aritz Blasco for the Advanced Software Development course.
+    </string>
+    <string name="toolbar_title">Agenda</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_theme">Dark Mode</string>
+    <string name="nav_language">Language</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="tasks_title">Tasks</string>
+    <string name="fab_add_task_desc">Add Task</string>
+    <string name="task_title_hint">Title</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="task_description_hint">Description</string>
+    <string name="task_detail_title">Task Title</string>
+    <string name="task_detail_date_time">Date and Time</string>
+    <string name="task_detail_description">Description</string>
+    <string name="btn_modify">Modify</string>
+    <string name="btn_delete">Delete</string>
+    <string name="calendar_title">Calendar</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="calendar_not_available">No calendar app available.</string>
+    <string name="task_deleted_title">Task Deleted</string>
+    <string name="task_deleted_message">The task was successfully deleted.</string>
+    <string name="ok">OK</string>
+    <string name="calendar_success">Calendar opened to add the event.</string>
+</resources>

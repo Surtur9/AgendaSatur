@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AgendaSatur</string>
+    <string name="logo">Logo de la aplicación</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>ç
+    <string name="home_description">
+    AgendaSatur es una aplicación de agenda y gestión de tareas que funciona de forma local.\n\n
+    Entre sus funcionalidades se encuentran:\n
+    • Listado de tareas con notificaciones.\n
+    • Calendario interactivo que marca los días con eventos.\n
+    • Creación, modificación y eliminación de tareas.\n
+    • Modo oscuro y claro.\n
+    • Soporte multi-idioma.\n\n
+    Desarrollada por Aritz Blasco para la asignatura de Desarrollo Avanzado de Software.
+</string>
+    <string name="toolbar_title">Agenda</string>
+    <string name="nav_notifications">Notificaciones</string>
+    <string name="nav_theme">Modo oscuro</string>
+    <string name="nav_language">Idioma</string>
+    <string name="nav_calendar">Calendario</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_tasks">Tareas</string>
+    <string name="tasks_title">Tareas</string>
+    <string name="fab_add_task_desc">Agregar Tarea</string>
+    <string name="task_title_hint">Título</string>
+    <string name="select_date">Selecciona Fecha</string>
+    <string name="select_time">Selecciona Hora</string>
+    <string name="task_description_hint">Descripción</string>
+    <string name="task_detail_title">Título de la tarea</string>
+    <string name="task_detail_date_time">Fecha y hora</string>
+    <string name="task_detail_description">Descripción</string>
+    <string name="btn_modify">Modificar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="calendar_title">Calendario</string>
+    <string name="add_to_calendar">Añadir al Calendario</string>
+    <string name="calendar_not_available">No se encontró una aplicación para gestionar el calendario.</string>
+    <string name="task_deleted_title">Tarea eliminada</string>
+    <string name="task_deleted_message">La tarea ha sido eliminada exitosamente.</string>
+    <string name="ok">OK</string>
+    <string name="calendar_success">Se abrió el calendario para añadir el evento.</string>
+</resources>

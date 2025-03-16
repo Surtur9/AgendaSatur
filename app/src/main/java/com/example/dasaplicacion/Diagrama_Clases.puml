@@ -1,0 +1,108 @@
+@startuml
+title Diagrama Completo de Clases (Base de datos, UI, Workers y Notificaciones)
+
+' ======= BASE DE DATOS =======
+package "Database (Room)" {
+
+  class AppDatabase {
+    + taskDao(): TaskDao
+  }
+
+  interface TaskDao {
+    + insertTask(Task): long
+    + getUpcomingTasks(Date): List<Task>
+    + getTasksForDay(long): List<Task>
+    + getAllTasks(): List<Task>
+    + deleteTask(Task): void
+  }
+
+  class Converters {
+    + fromTimestamp(Long): Date
+    + dateToTimestamp(Date): Long
+  }
+
+  class Task {
+    - id: int
+    - title: String
+    - description: String
+    - dateTime: Date
+    + getId(): int
+    + getTitle(): String
+    + getDescription(): String
+    + getDateTime(): Date
+  }
+}
+
+' ======= UI (Interfaz gráfica) =======
+package "UI (Interfaz gráfica)" {
+    class MainActivity {
+        - preferences: SharedPreferences
+        + loadFragment(Fragment)
+        + setLocale(String)
+    }
+    class HomeFragment {
+    }
+    class CalendarFragment {
+        - calendarView: MaterialCalendarView
+        - tasksRecyclerView: RecyclerView
+        + loadTasksForDay(CalendarDay)
+        + loadEventDates()
+    }
+    class TasksFragment {
+        - recyclerView: RecyclerView
+        - fabAddTask: FloatingActionButton
+        + loadTasks()
+        + showAddTaskDialog()
+        + scheduleNotification(Task)
+    }
+    class TaskDetailDialogFragment {
+        - task: Task
+        + showCalendarResultDialog(String)
+        + cancelNotification(Task)
+        + showTaskDeletedDialog()
+    }
+}
+
+' ======= WORKERS =======
+package "Workers (Tareas en segundo plano)" {
+    class TaskNotificationWorker {
+        + doWork(): Result
+        - createNotificationChannel()
+    }
+}
+
+' ======= NOTIFICACIONES =======
+package "Notificaciones" {
+    class NotificationReceiver {
+        + onReceive(Context, Intent)
+        - createNotificationChannel(Context)
+    }
+}
+
+' ======= RELACIONES =======
+
+' Relación entre la base de datos y otros componentes
+AppDatabase ..> TaskDao : proporciona acceso
+AppDatabase ..> Converters : utiliza
+TaskDao --> Task : gestiona (CRUD)
+Converters --> Task : convierte fechas para
+
+TasksFragment ..> Task : consulta y modifica mediante TaskDao
+TasksFragment --> TaskDao : usa
+TaskDetailDialogFragment ..> Task : visualiza/modifica mediante TaskDao
+TaskDetailDialogFragment --> TaskDao : elimina tarea
+
+' Relaciones UI
+MainActivity --> HomeFragment : carga
+MainActivity --> CalendarFragment : carga
+MainActivity --> TasksFragment : carga
+TasksFragment --> TaskDetailDialogFragment : abre diálogo
+
+' Workers para notificaciones futuras
+TasksFragment ..> TaskNotificationWorker : programa notificación
+
+' Notificaciones inmediatas mediante AlarmManager y Receiver
+TaskDetailDialogFragment ..> NotificationReceiver : cancela notificación
+TaskNotificationWorker ..> NotificationReceiver : notifica (NotificationManager)
+
+@enduml

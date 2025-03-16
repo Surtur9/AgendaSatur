@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgendaSatur</string>
+    <string name="logo">Aplikazioaren logoa</string>
+    <string name="navigation_drawer_open">Ireki menua</string>
+    <string name="navigation_drawer_close">Itxi menua</string>
+    <string name="home_description">
+    AgendaSatur agenda eta zereginen kudeaketa egiteko aplikazioa da, modu lokalean funtzionatzen duena.\n\n
+    Bere funtzionalitate nagusiak honako hauek dira:\n
+    • Jakinaraziekin zereginen zerrenda.\n
+    • Ekitaldirik dituzten egunak nabarmentzen dituen egutegia interaktiboa.\n
+    • Zereginen sorrera, aldaketa eta ezabatzea.\n
+    • Ilun eta argi moduak.\n
+    • Hizkuntza anitzeko laguntza.\n\n
+    Aritz Blasco-k garatua, Software Garapen Aurreratua ikastaroarentzat.
+    </string>
+    <string name="toolbar_title">Agenda</string>
+    <string name="nav_notifications">Jakinarazpenak</string>
+    <string name="nav_theme">Ilun modua</string>
+    <string name="nav_language">Hizkuntza</string>
+    <string name="nav_calendar">Egutegia</string>
+    <string name="nav_home">Hasiera</string>
+    <string name="nav_tasks">Zeregak</string>
+    <string name="tasks_title">Zeregak</string>
+    <string name="fab_add_task_desc">Zerga Gehitu</string>
+    <string name="task_title_hint">Izenburua</string>
+    <string name="select_date">Data Aukeratu</string>
+    <string name="select_time">Ordu Aukeratu</string>
+    <string name="task_description_hint">Deskribapena</string>
+    <string name="task_detail_title">Zeregiko Izenburua</string>
+    <string name="task_detail_date_time">Data eta Ordua</string>
+    <string name="task_detail_description">Deskribapena</string>
+    <string name="btn_modify">Aldatu</string>
+    <string name="btn_delete">Ezabatu</string>
+    <string name="calendar_title">Egutegia</string>
+    <string name="add_to_calendar">Gehitu Egutegira</string>
+    <string name="calendar_not_available">Ez dago egutegi aplikaziorik.</string>
+    <string name="task_deleted_title">Zerga Ezabatua</string>
+    <string name="task_deleted_message">Zerga arrakastaz ezabatua izan da.</string>
+    <string name="ok">Ados</string>
+    <string name="calendar_success">Egutegia ireki da gertaera gehitzeko.</string>
+</resources>

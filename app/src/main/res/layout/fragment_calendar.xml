@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground">
+
+    <!-- Título de la página Calendario -->
+    <TextView
+        android:id="@+id/tv_tasks_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:textColor="?attr/colorOnBackground" />
+
+    <!-- Calendario -->
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        app:mcv_dateTextAppearance="@style/CalendarDayTextAppearance" />
+
+    <!-- Lista de tareas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_tasks_day"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:scrollbars="vertical"/>
+</LinearLayout>

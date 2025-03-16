@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base para modo claro -->
+    <style name="Base.Theme.DASaplicacion" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Configuraciones para modo claro -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorSurfaceVariant">#E0E0E0</item>
+    </style>
+
+    <style name="Theme.DASaplicacion" parent="Base.Theme.DASaplicacion" />
+</resources>

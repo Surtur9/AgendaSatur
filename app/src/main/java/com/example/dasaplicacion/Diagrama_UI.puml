@@ -1,0 +1,62 @@
+@startuml
+title Diagrama de clases (UI, Workers y Notificaciones)
+
+package "UI (Interfaz gráfica)" {
+    class MainActivity {
+        - preferences: SharedPreferences
+        + loadFragment(Fragment)
+        + setLocale(String)
+    }
+    class HomeFragment {
+    }
+    class CalendarFragment {
+        - calendarView: MaterialCalendarView
+        - tasksRecyclerView: RecyclerView
+        + loadTasksForDay(CalendarDay)
+        + loadEventDates()
+    }
+    class TasksFragment {
+        - recyclerView: RecyclerView
+        - fabAddTask: FloatingActionButton
+        + loadTasks()
+        + showAddTaskDialog()
+        + scheduleNotification(Task)
+    }
+    class TaskDetailDialogFragment {
+        - task: Task
+        + showCalendarResultDialog(String)
+        + cancelNotification(Task)
+        + showTaskDeletedDialog()
+    }
+}
+
+package "Workers (Tareas en segundo plano)" {
+    class TaskNotificationWorker {
+        + doWork(): Result
+        - createNotificationChannel()
+    }
+}
+
+package "Notificaciones" {
+    class NotificationReceiver {
+        + onReceive(Context, Intent)
+        - createNotificationChannel(Context)
+    }
+}
+
+' Relaciones entre componentes
+MainActivity --> HomeFragment : carga
+MainActivity --> CalendarFragment : carga
+MainActivity --> TasksFragment : carga
+TasksFragment --> TaskDetailDialogFragment : abre
+
+' Uso del Worker para programar notificaciones
+TasksFragment ..> TaskNotificationWorker : programa notificación con WorkManager
+
+' Receiver gestiona notificaciones inmediatas (AlarmManager)
+TaskDetailDialogFragment ..> NotificationReceiver : cancela notificación (AlarmManager)
+
+' Worker utiliza SharedPreferences y NotificationManager para enviar notificaciones
+TaskNotificationWorker ..> NotificationReceiver : notifica (NotificationManager)
+
+@enduml

@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base para modo oscuro -->
+    <style name="Base.Theme.DASaplicacion" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Configuraciones para modo oscuro -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="colorBackground">@color/black</item>
+        <item name="colorOnBackground">@color/white</item>
+        <!-- Cambiamos colorSurface para que las tarjetas sean grises -->
+        <item name="colorSurface">@color/dark_task_background</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurfaceVariant">#424242</item>
+
+    </style>
+    <style name="Theme.DASaplicacion" parent="Base.Theme.DASaplicacion" />
+</resources>

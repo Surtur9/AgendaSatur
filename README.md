@@ -15,7 +15,7 @@ Modo oscuro y claro: cambia fácilmente según preferencia del usuario.
 Soporte multi-idioma: Castellano, Euskera e Inglés.
 
 ## 📂 Estructura del proyecto
-
+```
 DASaplicacion
 ├── app
 │   └── src
@@ -36,7 +36,7 @@ DASaplicacion
 ├── gradle
 ├── build.gradle
 └── AndroidManifest.xml
-
+```
 ## 📲 Uso de la aplicación:
 
 Pantalla Inicio: breve descripción de funcionalidades.

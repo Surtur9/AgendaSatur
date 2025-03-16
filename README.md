@@ -14,7 +14,7 @@ Modo oscuro y claro: cambia fácilmente según preferencia del usuario.
 
 Soporte multi-idioma: Castellano, Euskera e Inglés.
 
-📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 
 DASaplicacion
 ├── app
@@ -37,7 +37,7 @@ DASaplicacion
 ├── build.gradle
 └── AndroidManifest.xml
 
-📲 Uso de la aplicación:
+## 📲 Uso de la aplicación:
 
 Pantalla Inicio: breve descripción de funcionalidades.
 
@@ -45,7 +45,7 @@ Pantalla Calendario: calendario con tareas marcadas.
 
 Pantalla Tareas: listado y gestión de tareas.
 
-🌐 Idiomas soportados:
+## 🌐 Idiomas soportados:
 
 Castellano
 
@@ -53,13 +53,13 @@ Euskera
 
 Inglés
 
-🌓 Modos visuales:
+## 🌓 Modos visuales:
 
 Claro
 
 Oscuro
 
-⚙️ Tecnologías utilizadas:
+## ⚙️ Tecnologías utilizadas:
 
 Android Studio (Java)
 
@@ -69,13 +69,13 @@ WorkManager
 
 Notificaciones con AlarmManager y WorkManager
 
-🔧 Requisitos técnicos:
+## 🔧 Requisitos técnicos:
 
 Android Studio (versión recomendada: Flamingo | 2022.2.1)
 
 SDK Android API nivel 21 (Lollipop) o superior.
 
-📥 Descarga e instalación:
+## 📥 Descarga e instalación:
 
 Clona el repositorio:
 
@@ -83,7 +83,7 @@ git clone https://github.com/Surtur9/AgendaSatur.git
 
 Abre el proyecto en Android Studio y compílalo directamente desde allí.
 
-📄 Documentación:
+##📄 Documentación:
 
 Puedes consultar la documentación completa dentro del repositorio, incluyendo:
 
@@ -93,7 +93,7 @@ Diagramas de base de datos
 
 Manual de usuario
 
-👤 Autor:
+## 👤 Autor:
 
 Aritz Blasco - Proyecto desarrollado para la asignatura Desarrollo Avanzado de Software.
 

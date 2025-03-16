@@ -1,8 +1,8 @@
-📆 AgendaSatur
+# 📆 AgendaSatur
 
 AgendaSatur es una aplicación Android para la gestión de tareas y eventos que funciona localmente y cuenta con soporte multi-idioma, modo oscuro y notificaciones integradas.
 
-📌 Características principales:
+## 📌 Características principales:
 
 Gestión de tareas: crear, visualizar y eliminar tareas.
 

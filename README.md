@@ -18,6 +18,7 @@ Soporte multi-idioma: Castellano, Euskera e Inglés.
 
 DASaplicacion
 ├── app
+
 │   └── src
 │       └── main
 │           ├── java
@@ -83,7 +84,7 @@ git clone https://github.com/Surtur9/AgendaSatur.git
 
 Abre el proyecto en Android Studio y compílalo directamente desde allí.
 
-##📄 Documentación:
+## 📄 Documentación:
 
 Puedes consultar la documentación completa dentro del repositorio, incluyendo:
 

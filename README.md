@@ -17,7 +17,6 @@ Soporte multi-idioma: Castellano, Euskera e Inglés.
 ## 📂 Estructura del proyecto
 
 DASaplicacion
-
 ├── app
 │   └── src
 │       └── main
